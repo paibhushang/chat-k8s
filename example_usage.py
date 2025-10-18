@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Example usage of the Kubernetes Health Monitoring MCP Server
+Example usage of Chat K8s - Kubernetes Health Monitoring MCP Server
 
-This script demonstrates how to use the MCP server tools to monitor
-Kubernetes cluster health.
+This script demonstrates how to use the Chat K8s MCP server tools to monitor
+Kubernetes cluster health through conversational interfaces.
 
 Usage:
     uv run python example_usage.py
@@ -22,7 +22,7 @@ def main():
     # Example kubeconfig path (update this to your actual path)
     kubeconfig_path = "/path/to/your/kubeconfig"
     
-    print("🚀 Kubernetes Health Monitoring Example")
+    print("🚀 Chat K8s - Kubernetes Health Monitoring Example")
     print("=" * 50)
     
     # 1. Load kubeconfig

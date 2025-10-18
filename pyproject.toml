@@ -3,13 +3,13 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "k8s-health-mcp-server"
+name = "chat-k8s"
 version = "0.1.0"
-description = "Kubernetes Health Monitoring MCP Server"
+description = "Chat-based Kubernetes Health Monitoring MCP Server"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-    {name = "K8s Health Monitor", email = "k8s-health@example.com"},
+    {name = "Chat K8s", email = "chat-k8s@example.com"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -43,12 +43,12 @@ dev = [
 ]
 
 [project.scripts]
-k8s-health-server = "k8s_health_server:main"
+chat-k8s = "k8s_health_server:main"
 
 [project.urls]
-Homepage = "https://github.com/example/k8s-health-mcp-server"
-Repository = "https://github.com/example/k8s-health-mcp-server"
-Issues = "https://github.com/example/k8s-health-mcp-server/issues"
+Homepage = "https://github.com/example/chat-k8s"
+Repository = "https://github.com/example/chat-k8s"
+Issues = "https://github.com/example/chat-k8s/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["k8s_health_server.py"]

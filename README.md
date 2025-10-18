@@ -1,6 +1,6 @@
-# Kubernetes Health Monitoring MCP Server
+# Chat K8s
 
-An MCP (Model Context Protocol) server that provides comprehensive Kubernetes cluster health monitoring capabilities. This server allows you to connect to Kubernetes clusters using kubeconfig files and monitor the health, status, and resource utilization of your applications and infrastructure.
+A chat-based Kubernetes health monitoring MCP server that provides comprehensive cluster health monitoring capabilities. This server allows you to connect to Kubernetes clusters using kubeconfig files and monitor the health, status, and resource utilization of your applications and infrastructure through conversational interfaces.
 
 ## Quick Start
 
@@ -8,9 +8,11 @@ An MCP (Model Context Protocol) server that provides comprehensive Kubernetes cl
 - **URL**: `http://localhost:8000/mcp`
 - **Port**: `8000`
 - **Start Server**: `uv run python k8s_health_server.py`
+- **Install Script**: `chat-k8s` (after installation)
 
 ## Features
 
+- **Chat-Based Interface**: Conversational Kubernetes cluster monitoring and management
 - **Cluster Connection**: Load and connect to Kubernetes clusters using kubeconfig files
 - **Object Listing**: List all Kubernetes objects across namespaces or specific namespaces
 - **Object Counting**: Get counts of all Kubernetes object types
@@ -67,6 +69,9 @@ source .venv/bin/activate  # On Unix/macOS
 ```bash
 # Using uv run (recommended) - default port 8000
 uv run python k8s_health_server.py
+
+# Or using the installed script
+chat-k8s
 
 # Or activate the virtual environment first
 source .venv/bin/activate

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Kubernetes Health Monitoring MCP Server
+Chat K8s - Kubernetes Health Monitoring MCP Server
 
-This MCP server provides tools to monitor Kubernetes cluster health,
+This MCP server provides chat-based tools to monitor Kubernetes cluster health,
 including listing objects, checking pod/node status, and resource utilization.
 """
 
@@ -20,7 +20,7 @@ from kubernetes.client.rest import ApiException
 
 class KubernetesHealthServer:
     def __init__(self):
-        self.mcp = FastMCP("Kubernetes Health Monitor")
+        self.mcp = FastMCP("Chat K8s")
         self.k8s_client = None
         self.k8s_apps_client = None
         self.k8s_metrics_client = None
@@ -556,7 +556,7 @@ class KubernetesHealthServer:
     
     def run(self, port: int = 8000, transport: str = 'http'):
         """Run the MCP server"""
-        print(f"🚀 Starting Kubernetes Health MCP Server...")
+        print(f"🚀 Starting Chat K8s MCP Server...")
         print(f"📍 Server URL: http://localhost:{port}/mcp")
         print(f"🔌 Transport: {transport}")
         #print(f"🛠️  Available tools: {len(self.mcp.get_tools().keys())}")
